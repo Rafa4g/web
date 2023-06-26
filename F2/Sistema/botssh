@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@Modderajuda-----------#
+#--------@jhona70-----------#
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
