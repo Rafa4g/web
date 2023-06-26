@@ -1633,6 +1633,7 @@ exit 0' >$RCLOCAL
 elif [[ "$resposta" = '3' ]]; then
 		clear
 		if ps x | grep -w WebSocket | grep -v grep 1>/dev/null 2>/dev/null; then
+                figlet 'TECNO PRO' | lolcat
 		echo -e "\E[41;1;37m          WEBSOCKET SECURITY              \E[0m"
 				echo ""
 				fun_wsswsocksoff() { 
@@ -1654,6 +1655,7 @@ elif [[ "$resposta" = '3' ]]; then
 				
 				fun_socks
 			else
+                figlet 'TECNO PRO' | lolcat
 		echo -e "\E[44;1;37m          WEBSOCKET SECURITY              \E[0m"
 				echo ""
 				echo "$(echo -e "\033[1;32mPORTA UTILIZADA 80 \033[1;37m")"
@@ -1680,7 +1682,7 @@ elif [[ "$resposta" = '3' ]]; then
 				fun_bar 'fun_iniwssocks'
 				echo ""
 				echo -e "\033[1;32WEBSOCKET SECURITY ATIVADO COM SUCESSO\033[1;33m"
-				
+			        sleep 3
 				fun_socks
 			fi
 
